@@ -5,7 +5,7 @@ Modular programming is a software design technique that emphasizes separating th
 interchangeable modules, such that each contains everything necessary to execute only one aspect of the desired functionality.
 
 ## Getting Started
-Modularization of a program in JavaScript befor *ES6 Module* is under the pain for *JavaScript* developers.
+Modularization of a software in JavaScript befor *ES6 Module* is under the pain for *JavaScript* developers.
 With ES2015 (ES6), we can take the advantages of Modularization in JavaScript  program.
 
 ## Description
