@@ -6,6 +6,6 @@ React is a popular JavaScript library developed by *Facebook*. With React **Virt
 ## Presentation
 
 This sample is the **Vanilla JavaScript** version of 
-[Take a tour on Vanilla JavaSCript](https://docs.google.com/presentation/d/1HdbvYLSRA_yjzEUCIWwKCRc9XpCjejTvWPRmxb24mWs/).
+[Take a tour on Vanilla JavaScript](https://docs.google.com/presentation/d/1HdbvYLSRA_yjzEUCIWwKCRc9XpCjejTvWPRmxb24mWs/).
 
 
