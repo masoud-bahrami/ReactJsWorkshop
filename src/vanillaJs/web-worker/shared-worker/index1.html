@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      .rcorners3 {
+        border-radius: 15px 50px 30px 5px;
+
+        padding: 20px;
+        width: 200px;
+        height: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="index.html"> page 1 </a> <br />
+    <label for="message">Message : </label> <input type="text" id="message" />
+
+    <br />
+    <button name="btn" id="btn">SendMessage</button> <br />
+    <div class="rcorners3 " id="result"></div>
+
+    <script>
+      const $btn = document.getElementById("btn");
+      const worker = new SharedWorker("shared-worker.js");
+      worker.port.start();
+      worker.port.addEventListener("message", e => {
+        var div = document.getElementById("result");
+
+        div.innerHTML += e.data + "<br />";
+        console.log(e);
+      });
+
+      $btn.addEventListener("click", e => {
+        const message = document.getElementById("message");
+
+        worker.port.postMessage({ page: "Page 2", message: message.value });
+      });
+    </script>
+  </body>
+</html>
