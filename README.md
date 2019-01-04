@@ -1,4 +1,11 @@
 # ReactJsWorkshop
 
-The workshop power point file can be viewed at the following address: 
-https://docs.google.com/presentation/d/1HdbvYLSRA_yjzEUCIWwKCRc9XpCjejTvWPRmxb24mWs/
+React is a popular JavaScript library developed in *Facebook*. With React **Virtual DOM**, rendering task in JavaScript is a handy and funny task. React take the functional approach to work with DOM elements in an *immutable* way. This repo contain the files and exercise used in React Workshop which take a journey in React World.
+
+
+## Presentation
+
+This sample is the **Vanilla JavaScript** version of 
+[Take a tour on Vanilla JavaSCript](https://docs.google.com/presentation/d/1HdbvYLSRA_yjzEUCIWwKCRc9XpCjejTvWPRmxb24mWs/).
+
+
