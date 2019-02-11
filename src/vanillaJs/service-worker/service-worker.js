@@ -63,3 +63,9 @@ self.addEventListener("fetch", e => {
     })
   );
 });
+
+const elemet = document.querySelector();
+
+elemet.classList.add();
+
+elemet.addEventListener();

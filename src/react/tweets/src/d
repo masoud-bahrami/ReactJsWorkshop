@@ -1,0 +1,98 @@
+--install bootstrap
+npm i --save bootstrap
+
+--import bootstrap
+import "bootstrap/dist/css/bootstrap.css";
+
+--install font awsome
+npm i --save @fortawesome/fontawesome-svg-core
+npm i --save @fortawesome/free-solid-svg-icons
+npm i --save @fortawesome/react-fontawesome
+
+--import fontawesome
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faIgloo } from '@fortawesome/free-solid-svg-icons'
+
+library.add(faIgloo)
+
+
+--footer fot add a new card
+
+        <div className="card-footer " style={this.styles}>
+          <button>
+            New Tweet <FontAwesomeIcon icon="plus" />
+          </button>
+        </div>
+
+--new tweet from
+    <div className="card bg-light mb-3" style={this.styles}>
+          <div className="card-header">New Tweet</div>
+          <div className="card-body">
+            <form>
+              <div className="form-group">
+                <label for="exampleInputEmail1">ID</label>
+                <input
+                  type="email"
+                  className="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="Enter You ID"
+                />
+              </div>
+              <div className="form-group">
+                <label for="exampleInputPassword1">Body</label>
+                <input
+                  type="email"
+                  className="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="Enter tweet"
+                />
+              </div>
+              <button className="btn btn-success margin">Tweet</button>
+              <button className="btn btn-warning">Cancel</button>
+            </form>
+          </div>
+        </div>
+
+--sample card
+ <div className="card text-white bg-primary mb-3" style={this.styles}>
+          <div className="card-header">
+            Masoud Bahrami <FontAwesomeIcon icon="retweet" />
+          </div>
+          <div className="card-body">
+            <h5 className="card-title">Primary card title</h5>
+            <p className="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+          <div className="card-footer ">
+            <small className=" card-footer-left">
+              20
+              <FontAwesomeIcon icon="heart" />
+            </small>
+            <small className=" card-footer-left">
+              <button>
+                <FontAwesomeIcon icon="thumbs-up" />
+              </button>
+            </small>
+            <small className=" card-footer-left">
+              <button>
+                <FontAwesomeIcon icon="thumbs-down" />
+              </button>
+            </small>
+            <small className="card-footer-rigth">Like 3 mins ago</small>
+            <small className="card-footer-rigth">
+              <button>
+                <FontAwesomeIcon icon="trash-alt" />
+              </button>
+            </small>
+            <small className="card-footer-rigth">
+              <button>
+                <FontAwesomeIcon icon="marker" />
+              </button>
+            </small>
+          </div>
+        </div>
