@@ -1,13 +1,39 @@
-<!DOCTYPE html>
-<html>
-<script type="text/javascript" src="oopPractice.js"></script>
+<!doctype html>
+<html lang="en">
 
-<body id="body">
+<head>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-grid.css">
+    <script src="book.js"></script>
+    <title>Hello, world!</title>
+</head>
 
-    Enter your name: <input type="text" id="fname" onchange="myFunction()">
+<body>
+    <div class="container">
+        <nav class="navbar navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Navbar</a>
+        </nav>
+        <form>
+            <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" class="form-control" id="firstName" aria-describedby="emailHelp" placeholder="Enter First name">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" class="form-control" id="lastName" placeholder="Password">
+            </div>
+            <div class="form-group">
+                <label for="age">Last Name</label>
+                <input type="text" class="form-control" id="age" placeholder="Password">
+            </div>
+            <button type="submit" class="btn btn-primary" onclick="onSubmit()">Submit</button>
+        </form>
+        <div id="showAll">
 
-    <button onclick="onClickMe(this)">Click me</button>
-
+        </div>
+    </div>
 </body>
 
 </html>
